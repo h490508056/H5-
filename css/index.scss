@@ -1,0 +1,50 @@
+            @import "common.scss";
+            @import "_minix.scss";
+            .wrapper {
+                width: 100%;
+                height: 100%;
+                .header {
+                    width: 100%;
+                    height: pxTorem(40px);
+                    @include box-flex;
+                    @include align;
+                    @include justify(space-between);
+                    @include sizing;
+                    padding: 0 pxTorem(10px);
+                }
+                .main {
+                    width: 100%;
+                    height: auto;
+                    .ul1 {
+                        width: 100%;
+                        height: pxTorem(100px);
+                        @include box-flex;
+                        li {
+                            width: 25%;
+                            height: 100%;
+                            @include box-flex;
+                            @include direction(column);
+                            @include align;
+                            .ltop {
+                                width: pxTorem(45px);
+                                height: pxTorem(45px);
+                                border-radius: 50%;
+                                border: 1px solid #ccc;
+                                margin-bottom: pxTorem(10px);
+                            }
+                        }
+                    }
+                    .ol1 {
+                        width: 100%;
+                        height: pxTorem(400px);
+                        li {
+                            width: 100%;
+                            height: pxTorem(400px);
+                            display: none;
+                        }
+                        .li1 {
+                            display: block;
+                        }
+                    }
+                }
+            }
